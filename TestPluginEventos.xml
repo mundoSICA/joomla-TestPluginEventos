@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Test Eventos de Plugins</name>
+	<author>Fitorec</author>
+	<creationDate>02-04-2013</creationDate>
+	<authorEmail>programacion@mundosica.com</authorEmail>
+	<license>GNU/GPL version 2 or later</license>
+	<authorUrl>http://www.mundosica.com</authorUrl>
+	<version>1.0</version>
+	<description>
+		Plugin de prueba que nos muestra un el funcionamiento de los eventos en un Plugin de Joomla!
+	</description>
+	<files>
+		<filename plugin="TestPluginEventos">TestPluginEventos.php</filename>
+		<filename>TestPluginEventos.xml</filename>
+	</files>
+</extension>
