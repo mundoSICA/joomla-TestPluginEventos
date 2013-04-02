@@ -33,7 +33,7 @@ class plgContentTestPluginEventos extends JPlugin
 	public function onContentPrepare($context, &$row, &$params, $limitstart)
 	{
 		if($context == 'com_content.article')
-			$row->text = '<p>Contenido modificado en <b>onContentPrepare</b></p>' . $row->text;
+			$row->text = '<p>Contenido modificado en el evento <b>onContentPrepare</b></p>' . $row->text;
 	}//fin onContentPrepare
 
 
@@ -47,7 +47,7 @@ class plgContentTestPluginEventos extends JPlugin
  */
 	public function onContentBeforeDisplay($context, &$row, &$params, $limitstart)
 	{
-		return sprintf($this->_titulo, '#FF4A00', 'Acción onContentBeforeDisplay');
+		return sprintf($this->_titulo, '#FF4A00', 'Evento onContentBeforeDisplay');
 	}//fin onContentBeforeDisplay
 
 /**
@@ -60,7 +60,7 @@ class plgContentTestPluginEventos extends JPlugin
  */
 	public function onContentAfterDisplay($context, &$row, &$params, $limitstart)
 	{
-			return sprintf($this->_titulo, '#1C9202', 'Acción onContentAfterDisplay');
+			return sprintf($this->_titulo, '#1C9202', 'Evento onContentAfterDisplay');
 	}//fin onContentAfterDisplay
 
 }
